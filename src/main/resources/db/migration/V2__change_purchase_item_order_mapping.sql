@@ -9,4 +9,17 @@ alter table order_table drop constraint order_table_purchase_item_table_id_fk;
 
 alter table order_table drop column purchase_item_id;
 
+alter table product_table
+   add main_image_url varchar;
 
+alter table product_table
+   add image_url_one varchar;
+
+alter table product_table
+   add image_url_two varchar;
+
+alter table product_table
+   add image_url_three varchar;
+
+alter table product_table
+   drop column image_url;
