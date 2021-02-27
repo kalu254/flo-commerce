@@ -12,7 +12,7 @@
 	<artifactId>flo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>flo</name>
-	<description>Demo project for Spring Boot</description>
+	<description>An e-commerce back end app</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -76,6 +76,18 @@
                     <testTarget>1.8</testTarget>
                     <showDeprecation>true</showDeprecation>
                     <compilerArgument>-Xlint:unchecked</compilerArgument>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>6.4.4</version>
+                <configuration>
+                    <url>jdbc:postgresql://localhost:5432/f_commerce</url>
+                    <user>kalu</user>
+                    <password>kalu</password>
+
                 </configuration>
             </plugin>
 		</plugins>
